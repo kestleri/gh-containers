@@ -18,6 +18,7 @@ jobs:
       MONGODB_CLUSTER_ADDRESS: cluster0.fumythr.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+      PORT: ${{ vars.PORT }}
     services:
       mongodb:
         image: mongo
